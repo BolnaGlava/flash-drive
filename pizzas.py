@@ -1,6 +1,20 @@
-magicians = ['gandalf','vezuvi','lord zul']
-for magican in magicians:
-    print(f"{magican.title()} that was a great magic trick!")
+characters = {
+    'gandalf': 'wizard',
+    'vezuvi': 'wizard',
+    'lord zul': 'wizard',
+    'rabbit': 'animal',
+    'sezer': 'human',
+}
+wizards = []
+
+for name, kind in characters.items():
+    if kind == 'wizard':
+        wizards.append(name.title())
+
+
+print("Finde the magician:")
+for wizard in wizards:
+    print(f"- {wizard}")
     
 #TRY IT YOURSELF
 #PIZAAAA
